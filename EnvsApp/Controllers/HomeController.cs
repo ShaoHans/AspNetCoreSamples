@@ -5,13 +5,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using EnvsApp.Models;
+using Microsoft.Extensions.Configuration;
 
 namespace EnvsApp.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IConfiguration _configuration;
+        public HomeController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         public IActionResult Index()
         {
+            ViewBag.PmUrl = _configuration["PMUrl"];
             return View();
         }
 
