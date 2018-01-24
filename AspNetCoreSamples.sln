@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Environments", "00.Envir
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvsApp", "EnvsApp\EnvsApp.csproj", "{12F4F733-EE24-43E7-9B3C-E98D013CD81C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Middleware", "02.Middleware", "{EF29A229-5404-4949-8C8C-671438BE7A61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareApp", "MiddlewareApp\MiddlewareApp.csproj", "{9A413C38-2914-4477-953E-0F3680B14472}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{12F4F733-EE24-43E7-9B3C-E98D013CD81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12F4F733-EE24-43E7-9B3C-E98D013CD81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12F4F733-EE24-43E7-9B3C-E98D013CD81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A413C38-2914-4477-953E-0F3680B14472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A413C38-2914-4477-953E-0F3680B14472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A413C38-2914-4477-953E-0F3680B14472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A413C38-2914-4477-953E-0F3680B14472}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{85928F97-332A-4CF5-B465-D2B16A26CD2F} = {53072C00-E210-4CEE-8B75-39779D591A92}
 		{12F4F733-EE24-43E7-9B3C-E98D013CD81C} = {BFE0B8C6-3F8E-4F6F-960F-BA9D808774D3}
+		{9A413C38-2914-4477-953E-0F3680B14472} = {EF29A229-5404-4949-8C8C-671438BE7A61}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {497B464D-9D2E-461A-911C-2C7355F45CA7}
