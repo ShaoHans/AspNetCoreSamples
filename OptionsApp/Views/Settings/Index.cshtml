@@ -1,0 +1,34 @@
+﻿@using OptionsApp.Models
+@model AppSettings
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>参数</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>OAuthUrl</th>
+            <th>AppId</th>
+            <th>AppSecret</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.OAuthServers.QQ.OAuthUrl</td>
+            <td>@Model.OAuthServers.QQ.AppId</td>
+            <td>@Model.OAuthServers.QQ.AppSecret</td>
+        </tr>
+        <tr>
+            <td>@Model.OAuthServers.WeChat.OAuthUrl</td>
+            <td>@Model.OAuthServers.WeChat.AppId</td>
+            <td>@Model.OAuthServers.WeChat.AppSecret</td>
+        </tr>
+        <tr>
+            <td>@Model.OAuthServers.Weibo.OAuthUrl</td>
+            <td>@Model.OAuthServers.Weibo.AppId</td>
+            <td>@Model.OAuthServers.Weibo.AppSecret</td>
+        </tr>
+    </tbody>
+</table>
+
