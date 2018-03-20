@@ -14,6 +14,7 @@ namespace LoggingApp
     {
         public Startup(IConfiguration configuration)
         {
+
             Configuration = configuration;
         }
 
