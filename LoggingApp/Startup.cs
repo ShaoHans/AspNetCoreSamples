@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OptionsApp.Models;
+using Microsoft.Extensions.Logging;
 
-namespace OptionsApp
+namespace LoggingApp
 {
     public class Startup
     {
@@ -22,8 +22,11 @@ namespace OptionsApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<AppSettings>(Configuration);
-            services.Configure<AppSettings>("", o => o.OAuthServers.QQ.AppId = "shz");
+            //services.AddLogging(builder=> 
+            //{
+            //    builder.AddConfiguration(Configuration.GetSection("Logging"))
+            //    .AddConsole();
+            //    });
             services.AddMvc();
         }
 
